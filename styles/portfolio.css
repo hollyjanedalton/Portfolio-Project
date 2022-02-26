@@ -49,7 +49,7 @@ p {
 }
 
 .hero h2 {
-  font-family: "Georgia", serif;
+  font-family: var(--heading-font-family);
   font-weight: normal;
   font-size: 24px;
   line-height: 1.5;
