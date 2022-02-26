@@ -1,6 +1,7 @@
 :root {
   --branding-color: #f6eedf;
   --secondary-color: #f57b51;
+  --tertiary-color: #d63447;
   --heading-font-family: "Georgia", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -20,15 +21,16 @@ h1 {
 }
 
 h2 {
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 1.5;
+  font-size: 64px;
+  font-weight: bold;
 }
 
 p {
   font-family: var(--default-font-family);
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 30px;
+  font-size: 16px;
+  opacity: 0.8;
 }
 
 .hero {
@@ -55,7 +57,7 @@ p {
   line-height: 1.5;
 }
 
-.btn {
+.btn-hero {
   background: var(--secondary-color);
   border-radius: 4px;
   color: #f6eedf;
@@ -66,7 +68,52 @@ p {
   font-family: var(--default-font-family);
 }
 
-.btn:hover {
+.btn-hero:hover {
   background-color: #d63447;
   color: #f6eedf;
+}
+
+.btn-branding-outline {
+  border-radius: 4px;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  background-color: var(--branding-color);
+  font-size: 16px;
+  line-height: 27px;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-family: var(--default-font-family);
+}
+
+.btn-branding-outline:hover {
+  background-color: var(--tertiary-color);
+  color: var(--branding-color);
+  border: none;
+}
+
+.project-description {
+  padding: 80px 40px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+    line-height: 2;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  .featured-projects {
+    padding: 0;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
