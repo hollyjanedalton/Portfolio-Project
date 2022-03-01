@@ -158,6 +158,37 @@ nav li.active a {
   border-radius: 4px;
 }
 
+footer {
+  margin: 50px 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  text-align: center;
+  font-family: var(--default-font-family);
+}
+
+footer .email-link:hover {
+  color: var(--secondary-color);
+}
+
+footer .social-links a {
+  margin: 30px 20px;
+  color: var(--secondary-color);
+  background: var(--branding-color);
+  padding: 10px 14px;
+  font-size: 20px;
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--secondary-color);
+}
+
 @media (max-width: 900px) {
   nav {
     padding: 5px;
@@ -199,5 +230,9 @@ nav li.active a {
 
   .content h1 {
     font-size: 44px;
+  }
+
+  footer .email-link {
+    font-size: 18px;
   }
 }
