@@ -95,21 +95,53 @@ p {
   padding: 80px 40px;
 }
 
-.about-section {
+nav {
+  padding: 8px 0;
+}
+nav ul {
+  padding: 0;
+  margin: auto;
+  font-family: var(--default-font-family);
+  font-size: 16px;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin-left: 25px;
+  line-height: 42px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  transition: all 150ms ease-in-out;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--secondary-color);
+}
+.content-container {
   padding: 160px 20px;
   text-align: center;
 }
 
-.about-section h1 {
+.content h1 {
   font-size: 64px;
 }
 
-.about-section h2 {
+.content h2 {
   font-size: 18px;
   font-family: var(--default-font-family);
 }
 
-.about-section p {
+.content h3 {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.content p {
   font-size: 14px;
 }
 
@@ -118,8 +150,23 @@ p {
   max-height: 80%;
   border-radius: 4px;
 }
+.volleyball-photo {
+  max-width: 90%;
+  max-height: 90%;
+}
+.content img {
+  border-radius: 4px;
+}
 
 @media (max-width: 900px) {
+  nav {
+    padding: 5px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
   .hero {
     padding: 80px 20px;
   }
@@ -127,10 +174,14 @@ p {
   .hero h1 {
     font-size: 44px;
     line-height: 2;
+    margin-bottom: 0;
+  }
+  .hero h2 {
+    font-size: 20px;
   }
 
   h2 {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .featured-projects {
@@ -141,12 +192,12 @@ p {
     text-align: center;
   }
 
-  .about-section {
+  .content-container {
     text-align: center;
     padding: 0;
   }
 
-  .about-section h1 {
+  .content h1 {
     font-size: 44px;
   }
 }
