@@ -1,8 +1,8 @@
 :root {
   --branding-color: #f6eedf;
-  --secondary-color: #f57b51;
-  --tertiary-color: #d63447;
-  --heading-font-family: "Georgia", serif;
+  --secondary-color: #d63447;
+  --tertiary-color: #f57b51;
+  --heading-font-family: "Space Grotesk", sans-serif;
   --default-font-family: "Poppins", sans-serif;
 }
 
@@ -57,7 +57,8 @@ p {
   line-height: 1.5;
 }
 
-.btn-hero {
+.btn-hero,
+.btn-branding-outline {
   background: var(--secondary-color);
   border-radius: 4px;
   color: white;
@@ -66,29 +67,14 @@ p {
   padding: 15px 30px;
   text-decoration: none;
   font-family: var(--default-font-family);
+  transition: all 150ms ease-in-out;
 }
 
-.btn-hero:hover {
-  background-color: #d63447;
-  color: white;
-}
-
-.btn-branding-outline {
-  border-radius: 4px;
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
-  background-color: var(--branding-color);
-  font-size: 16px;
-  line-height: 27px;
-  padding: 15px 30px;
-  text-decoration: none;
-  font-family: var(--default-font-family);
-}
-
+.btn-hero:hover,
 .btn-branding-outline:hover {
   background-color: var(--tertiary-color);
-  color: var(--branding-color);
-  border: none;
+  color: white;
+  transition: all 150ms ease-in-out;
 }
 
 .project-description {
@@ -163,6 +149,7 @@ nav li.active a {
   max-width: 90%;
   max-height: 90%;
 }
+
 img {
   border-radius: 4px;
 }
@@ -192,8 +179,8 @@ footer .email-link:hover {
 
 footer .social-links a {
   margin: 30px 20px;
-  color: var(--secondary-color);
-  background: var(--branding-color);
+  color: white;
+  background: var(--secondary-color);
   padding: 10px 14px;
   font-size: 20px;
   border-radius: 50%;
@@ -202,7 +189,7 @@ footer .social-links a {
 
 footer .social-links a:hover {
   color: white;
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
 }
 
 footer .Github-link,
