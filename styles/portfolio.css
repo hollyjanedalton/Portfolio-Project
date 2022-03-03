@@ -60,7 +60,7 @@ p {
 .btn-hero {
   background: var(--secondary-color);
   border-radius: 4px;
-  color: #f6eedf;
+  color: white;
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
@@ -70,7 +70,7 @@ p {
 
 .btn-hero:hover {
   background-color: #d63447;
-  color: #f6eedf;
+  color: white;
 }
 
 .btn-branding-outline {
@@ -150,14 +150,30 @@ nav li.active a {
   max-height: 80%;
   border-radius: 4px;
 }
+
+.Shecodes-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.Shecodes-link:hover {
+  color: var(--secondary-color);
+}
 .volleyball-photo {
   max-width: 90%;
   max-height: 90%;
 }
-.content img {
+img {
   border-radius: 4px;
 }
 
+.launch-work-links {
+  text-decoration: none;
+  color: black;
+}
+.launch-work-links:hover {
+  color: var(--secondary-color);
+}
 footer {
   margin: 50px 0;
 }
@@ -187,6 +203,16 @@ footer .social-links a {
 footer .social-links a:hover {
   color: white;
   background-color: var(--secondary-color);
+}
+
+footer .Github-link,
+.Name-link-footer {
+  color: black;
+}
+
+footer .Github-link:hover,
+.Name-link-footer:hover {
+  color: var(--secondary-color);
 }
 
 @media (max-width: 900px) {
