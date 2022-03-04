@@ -245,6 +245,10 @@ footer .Github-link:hover,
     font-size: 44px;
   }
 
+  .holly-photo {
+    max-width: 90%;
+    max-height: 90%;
+  }
   footer .email-link {
     font-size: 18px;
   }
