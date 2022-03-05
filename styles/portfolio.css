@@ -248,6 +248,7 @@ footer .Github-link:hover,
   .holly-photo {
     max-width: 90%;
     max-height: 90%;
+    margin-top: 20px;
   }
   footer .email-link {
     font-size: 18px;
